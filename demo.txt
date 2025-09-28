@@ -1,0 +1,30 @@
+Medical Text Transformation Results
+==================================================
+
+Variation 1:
+Language: en
+Strength: high
+Original: Patient presents with acute dyspnea, elevated blood pressure, and reports chronic headache.
+Transformed: Individual presents with acute dyspnea , elevated blood pressure , and reports long-term headache .
+Transformations: synonym_replacement: Patient -> Individual; synonym_replacement: chronic -> long-term
+Metadata: {'word_count': 15, 'sentence_count': 1, 'similarity_score': 0.75}
+------------------------------
+
+Variation 2:
+Language: en
+Strength: high
+Original: Patient presents with acute dyspnea, elevated blood pressure, and reports chronic headache.
+Transformed: Patient presents with severe dyspnea , elevated blood pressure , and reports chronic head pain .
+Transformations: synonym_replacement: acute -> severe; synonym_replacement: headache -> head pain
+Metadata: {'word_count': 16, 'sentence_count': 1, 'similarity_score': 0.7058823529411765}
+------------------------------
+
+Variation 3:
+Language: en
+Strength: high
+Original: Patient presents with acute dyspnea, elevated blood pressure, and reports chronic headache.
+Transformed: Patient presents with severe dyspnea , elevated blood pressure , and reports prolonged headache .
+Transformations: synonym_replacement: acute -> severe; synonym_replacement: chronic -> prolonged; terminology_variation: dyspnea -> shortness of breath; terminology_variation: shortness of breath -> dyspnea
+Metadata: {'word_count': 15, 'sentence_count': 1, 'similarity_score': 0.75}
+------------------------------
+

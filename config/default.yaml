@@ -1,0 +1,41 @@
+variation_strength: medium
+supported_languages:
+  - en
+  - pl
+  - de
+  - fr
+  - es
+transformation_types:
+  - synonym_replacement
+  - sentence_restructuring
+  - medical_terminology_variation
+  - paraphrasing
+num_variations: 5
+preserve_medical_accuracy: true
+medical_entity_types:
+  - DISEASE
+  - SYMPTOM
+  - MEDICATION
+  - PROCEDURE
+  - ANATOMY
+  - DOSAGE
+export_formats:
+  - json
+  - csv
+include_metadata: true
+strength_params:
+  low:
+    synonym_probability: 0.2
+    restructure_probability: 0.1
+    terminology_variation_probability: 0.15
+    max_word_changes: 0.1
+  medium:
+    synonym_probability: 0.4
+    restructure_probability: 0.3
+    terminology_variation_probability: 0.3
+    max_word_changes: 0.25
+  high:
+    synonym_probability: 0.7
+    restructure_probability: 0.5
+    terminology_variation_probability: 0.5
+    max_word_changes: 0.4
